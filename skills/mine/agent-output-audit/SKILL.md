@@ -1,6 +1,15 @@
 ---
 name: agent-output-audit
-description: Audits AI-implemented work (Compozy task slugs under `.compozy/tasks/<slug>/`, AI-authored PRs, cy-codex-loop iterations) for honest completion. Runs the independent-evaluator protocol against the implementing agent's transcripts and memory artifacts, scans test diffs for RF-1..RF-6 red flags (skipped tests, weakened assertions, mocks hiding integration, snapshot drift, happy-path-only, test-implementation symbiosis), produces the Requirement→Test mapping table, reconciles `task_NN.md` frontmatter `status:` against actual evidence, runs the canonical CI verification gate (lint/build/unit/integration) with flaky-test triage, and emits a Quality Gates verdict. Reads `state.yaml` (read-only — cy-codex-loop owns mutation via `update-state.py`), treats `task_NN.md` frontmatter as the source of truth, and writes audit notes to `memory/qa-execution.md` BEFORE any frontmatter status flip (memory-precedes-status invariant). Use when validating a `status: completed` task, an AI-authored PR, or a cy-codex-loop iteration that needs independent verification. Do not use for real-user QA, persona/journey testing, or exploratory charters — use `qa-execution` for those.
+description: >-
+  Audits AI-implemented work for honest completion. Runs independent-evaluator
+  checks against task artifacts, transcripts, tests, CI evidence,
+  requirement-to-test mapping, status front matter, and quality gates; flags
+  skipped tests, weakened assertions, mock-only confidence, snapshot drift,
+  happy-path-only coverage, flaky retries, and status/evidence mismatches. Use
+  when validating completed Compozy tasks, AI-authored PRs, or codex-loop
+  iterations. Do not use for real-user QA, persona/journey testing,
+  exploratory charters, or product usability sessions; use qa-execution for
+  those.
 argument-hint: "[audit-output-path]"
 ---
 

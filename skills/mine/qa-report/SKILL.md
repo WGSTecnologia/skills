@@ -1,6 +1,15 @@
 ---
 name: qa-report
-description: Plan real-user QA deliverables — define personas (new user, power user, casual user, mobile user, accessibility-reliant, recovering user), map user journeys (entry → actions → goal → exit with abandonment paths), write time-boxed exploratory charters bound to one test tour (Feature, Money, Garbage, Back-Button, Multi-Tab, Network, Locale, Paste, Autofill, Interrupt), generate persona-driven and journey-driven test cases (TC-FUNC, TC-UI, TC-REG, SMOKE, TC-PERSONA, TC-JOURNEY, TC-TOUR, TC-CFR), build journey-driven regression suites, validate against Figma designs, and file bug reports keyed by user impact (Blocks-Completion / Data-Loss / Trust-Damage / Friction / Cosmetic). Every deliverable drives from a Required Reading Router pointing at `references/test_case_templates.md`, `references/persona_test_cases.md`, `references/journey_test_plans.md`, `references/exploratory_charters.md`, `references/test_tours_catalog.md`, `references/cfr_test_cases.md`, `references/regression_testing.md`, `references/figma_validation.md`, and `references/bug_report_templates.md`. Use when planning QA before execution, documenting test strategies, marking which flows require E2E follow-up, or filing structured bug reports keyed by user impact. Do not use for technical integration / security / performance test suites (those belong to dedicated tools — integration tests in code, SAST, load testing), AI-generated code audits, or live execution — use `qa-execution` for execution and `agent-output-audit` for AI/CI/task-status audits.
+description: >-
+  Plans real-user QA deliverables: personas, journey maps, exploratory
+  charters, persona/journey/tour/CFR test cases, regression suites, Figma
+  validation checks, automation intent, and user-impact bug reports. Writes
+  artifacts under <qa-output-path>/qa/ for qa-execution to consume. Use when
+  planning QA before execution, documenting journey-driven test strategy,
+  marking flows that need E2E follow-up, or filing structured bug reports. Do
+  not use for live execution, AI implementation audits, CI gate ownership, or
+  technical integration/security/performance suites; use qa-execution or
+  agent-output-audit instead.
 trigger: explicit
 argument-hint: "[qa-output-path]"
 ---

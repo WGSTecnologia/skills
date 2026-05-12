@@ -1,6 +1,15 @@
 ---
 name: qa-execution
-description: Exercises a product the way a real human user would. Assigns personas (new user, power user, casual user, mobile user, accessibility-reliant, recovering user) and runs journey-driven QA sessions through public interfaces (browser, CLI, HTTP). Plans and executes time-boxed exploratory charters bound to one test tour (Feature, Money, Garbage, Back-Button, Multi-Tab, Network, Locale, Paste, Autofill, Interrupt). Probes user edge cases (refresh-during-submit, double-click, autofill, back-after-error, multi-tab, session-expiry mid-flow, slow network, locale switch). Runs a Cross-Functional Requirement pass on the changed surface (usability via Nielsen short list, accessibility WCAG AA quick check, perceived performance, browser/device compatibility, error recoverability, production parity). Captures evidence via the agent-browser companion skill. Files bugs keyed by user impact (Blocks-Completion / Data-Loss / Trust-Damage / Friction / Cosmetic) with persona and journey-step annotations. Reads test plans, personas, journeys, and charters from `qa-report` artifacts at `<qa-output-path>/qa/`. Use when validating a release candidate, a migration, a refactor, or any change against real-user experience. Do not use for AI-generated code audits, task-status reconciliation, CI gate runs, integration/security/performance technical templates, or flaky-test triage — those belong to `agent-output-audit`.
+description: >-
+  Executes real-user QA sessions through public interfaces using personas,
+  journeys, exploratory charters, test tours, edge-case probes, CFR checks, and
+  browser evidence. Reads qa-report artifacts from <qa-output-path>/qa/ when
+  present, captures issues/screenshots/reports under the same output tree, and
+  classifies bugs by user impact. Use when validating a release candidate,
+  migration, refactor, or user-facing change against production-like behavior.
+  Do not use for AI implementation audits, task-status reconciliation, CI gate
+  runs, integration/security/performance templates, or flaky-test triage; use
+  agent-output-audit for those.
 argument-hint: "[qa-output-path]"
 ---
 

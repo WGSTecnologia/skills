@@ -1,6 +1,13 @@
 ---
 name: skill-load-tips
-description: Diagnoses and refactors existing SKILL.md files whose reference/ and asset/ files never get loaded by the agent. Use when auditing or rewriting any SKILL.md over ~200 lines where the agent reads the body but ignores bundled references, or when a skill "feels shallow" despite having deep reference files. Applies four techniques: Required Reading Router at the top, hard STOP directives in operating steps, gist-tripwire trimming of duplicated inline content, and one-level-deep reference structure. Sibling of skill-best-practices (which authors new skills); this one rehabilitates existing ones. Don't use for authoring new skills from scratch, for non-skill markdown, or for documentation that has no SKILL.md frontmatter.
+description: >-
+  Diagnoses and refactors existing SKILL.md files whose references or assets
+  are ignored by agents. Applies Required Reading Routers, hard STOP directives,
+  gist-tripwire trimming, and flat one-level reference structures so bundled
+  context is loaded deliberately. Use when auditing or rewriting long skills
+  that feel shallow despite deep reference files. Do not use for authoring new
+  skills from scratch, non-skill Markdown, or documentation without SKILL.md
+  front matter.
 ---
 
 # Skill Load Tips

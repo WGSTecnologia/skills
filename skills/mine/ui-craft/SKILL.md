@@ -1,6 +1,13 @@
 ---
 name: ui-craft
-description: Guardrails for user-facing UI work that enforce usability heuristics, accessibility floors, design-system discipline, and component state completeness — built primarily to prevent AI-slop UI. Use when designing, generating, reviewing, or refactoring any pixel a user will see: components, pages, dashboards, forms, dialogs, empty/error/loading states, motion, microcopy, dark mode, responsive behavior, or agent/AI interfaces. Integrates with DESIGN.md, token files, and brand-authority docs (e.g. web/CLAUDE.md, COPY.md) when present. Don't use for backend-only work, infrastructure, CLI/TUI design (use tui-design), or pure documentation editing.
+description: >-
+  Provides guardrails for user-facing UI work: usability heuristics,
+  accessibility floors, design-system discipline, component states, microcopy,
+  motion, dark mode, responsive behavior, and human-AI UX. Use when designing,
+  generating, reviewing, or refactoring visible product surfaces such as
+  components, pages, dashboards, forms, dialogs, loading/empty/error states, or
+  AI interfaces. Do not use for backend-only work, infrastructure, CLI/TUI
+  design, or pure documentation editing.
 ---
 
 # UI Craft
