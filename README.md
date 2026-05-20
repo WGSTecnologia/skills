@@ -1,6 +1,6 @@
 # Pedro Nauck's Skills
 
-A curated collection of **122 agent skills** for Claude Code and compatible AI coding assistants — **27 original** (⭐️), **31 hand-picked** (💎), **18 marketing & business** (📣), plus **46 community** skills. Each skill provides domain-specific knowledge, best practices, and guided workflows that enhance an agent's ability to perform specialized tasks.
+A curated collection of **125 agent skills** for Claude Code and compatible AI coding assistants — **30 original** (⭐️), **31 hand-picked** (💎), **18 marketing & business** (📣), plus **46 community** skills. Each skill provides domain-specific knowledge, best practices, and guided workflows that enhance an agent's ability to perform specialized tasks.
 
 ## Installation
 
@@ -44,7 +44,7 @@ ln -s $(pwd)/skills/mine ~/.claude/skills/mine
 
 Skills are organized into four top-level buckets:
 
-- `skills/mine/` — 27 original skills authored in this repository (⭐️)
+- `skills/mine/` — 30 original skills authored in this repository (⭐️)
 - `skills/curated/` — 31 hand-picked community skills (💎)
 - `skills/marketing/` — 18 marketing, business, and writing skills (📣)
 - `skills/community/` — 46 broader community skills
@@ -74,6 +74,7 @@ Original skills authored in this repository.
 - **[drizzle-safe-migrations](./skills/mine/drizzle-safe-migrations)** — Production-safe Drizzle migration workflows for schema changes
 - **[fix-coderabbit-review](./skills/mine/fix-coderabbit-review)** — End-to-end remediation workflow for PR review feedback
 - **[git-rebase](./skills/mine/git-rebase)** — Git rebase operations and merge conflict resolution with clean history
+- **[kb-yt-channel](./skills/mine/kb-yt-channel)** — Turn a YouTube channel into a Karpathy KB topic — resolves recent or full uploads, scaffolds `yt-channels` topics, ingests transcripts via `kb ingest youtube` (captions / auto / STT), and validates plus indexes the result
 - **[no-workarounds](./skills/mine/no-workarounds)** — Enforce root-cause fixes over workarounds, hacks, and symptom patches
 - **[outside-to-issue](./skills/mine/outside-to-issue)** — Transform outside-of-diff review files into formatted issue files for a PR
 - **[qa-execution](./skills/mine/qa-execution)** — Execute QA the way a real user would: assign personas, run journey-driven sessions through agent-browser, execute time-boxed exploratory charters bound to one test tour, probe user edge cases (refresh-during-submit, multi-tab, autofill, slow network, session-expiry), and run the Cross-Functional Requirement pass (usability, accessibility, perceived performance, compatibility, recoverability, production parity).
@@ -93,6 +94,7 @@ Original skills authored in this repository.
 - **[tweetsmash-api](./skills/mine/tweetsmash-api)** — TweetSmash REST API for fetching bookmarks, managing labels, filtering, and pagination
 - **[typescript-advanced](./skills/mine/typescript-advanced)** — Advanced type system -- generics, conditional types, mapped types, template literals
 - **[ui-craft](./skills/mine/ui-craft)** — Anti-AI-slop guardrails for UI/UX work — usability heuristics, accessibility floors, design-system discipline, 14 named slop patterns with severity tags, tunable design dials (`VISUAL_VARIANCE`/`MOTION_INTENSITY`/`INFORMATION_DENSITY`), scene-driven decisions, Product vs Brand registers, anti-defaults blocklist, 7 named UI archetypes, plus performance / motion / dark-mode reference packs and executable contrast + token-drift scripts
+- **[writing-tech-post](./skills/mine/writing-tech-post)** — SOTA authoring loop for engineering blog posts — 8 archetype contracts (launch / postmortem / migration / performance / tutorial / research-translation / AI-agent / security), 5-rung abstraction ladder with rung-whiplash diagnostic, 12-form evidence taxonomy with `claim → artifact → reading` cadence, 7-publisher voice matrix, four disclosure contracts (blameless / coordinated-disclosure / paper-link-first / what-we'd-do-differently), narrative arcs + closer taxonomy, and a read-only `lint-post.py` pre-publish gate
 
 ### Curated 💎
 
