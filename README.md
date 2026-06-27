@@ -1,6 +1,6 @@
 # Pedro Nauck's Skills
 
-A curated collection of **127 agent skills** for Claude Code and compatible AI coding assistants — **32 original** (⭐️), **31 hand-picked** (💎), **18 marketing & business** (📣), plus **46 community** skills. Each skill provides domain-specific knowledge, best practices, and guided workflows that enhance an agent's ability to perform specialized tasks.
+A curated collection of **129 agent skills** for Claude Code and compatible AI coding assistants — **34 original** (⭐️), **31 hand-picked** (💎), **18 marketing & business** (📣), plus **46 community** skills. Each skill provides domain-specific knowledge, best practices, and guided workflows that enhance an agent's ability to perform specialized tasks.
 
 ## Installation
 
@@ -44,7 +44,7 @@ ln -s $(pwd)/skills/mine ~/.claude/skills/mine
 
 Skills are organized into four top-level buckets:
 
-- `skills/mine/` — 32 original skills authored in this repository (⭐️)
+- `skills/mine/` — 34 original skills authored in this repository (⭐️)
 - `skills/curated/` — 31 hand-picked community skills (💎)
 - `skills/marketing/` — 18 marketing, business, and writing skills (📣)
 - `skills/community/` — 46 broader community skills
@@ -75,6 +75,7 @@ Original skills authored in this repository.
 - **[drizzle-safe-migrations](./skills/mine/drizzle-safe-migrations)** — Production-safe Drizzle migration workflows for schema changes
 - **[fix-coderabbit-review](./skills/mine/fix-coderabbit-review)** — End-to-end remediation workflow for PR review feedback
 - **[git-rebase](./skills/mine/git-rebase)** — Git rebase operations and merge conflict resolution with clean history
+- **[impl-peer-review](./skills/mine/impl-peer-review)** — Optional cross-LLM peer review of an implementation diff via Compozy — an independent model writes one scoped findings file (blockers/risks/nits + SHIP/FIX/REWORK verdict) for user-directed remediation. Project-agnostic with configurable `--ide`/`--model`/`--reasoning` runtime, auto-detected `--verify` gate, and auto-discovered project rules
 - **[kb-yt-channel](./skills/mine/kb-yt-channel)** — Turn a YouTube channel into a Karpathy KB topic — resolves recent or full uploads, scaffolds `yt-channels` topics, ingests transcripts via `kb ingest youtube` (captions / auto / STT), and validates plus indexes the result
 - **[no-workarounds](./skills/mine/no-workarounds)** — Enforce root-cause fixes over workarounds, hacks, and symptom patches
 - **[outside-to-issue](./skills/mine/outside-to-issue)** — Transform outside-of-diff review files into formatted issue files for a PR
@@ -86,6 +87,7 @@ Original skills authored in this repository.
 - **[ship-pr](./skills/mine/ship-pr)** — End-of-feature ritual: explore impact across docs/site/README, generate release notes (via `pr-release` when present, else inline from `git log`), assemble a complete PR description (with QA artifacts when detected), commit per the repo's commitlint, open the PR via `gh`, and optionally launch a CodeRabbit review-watch loop. Optional integrations (`pr-release`, `skeeper`, `compozy`, QA artifacts) auto-detect and skip cleanly when absent.
 - **[skill-best-practices](./skills/mine/skill-best-practices)** — Author professional-grade agent skills following the agentskills.io spec
 - **[skill-load-tips](./skills/mine/skill-load-tips)** — Refactor existing SKILL.md files so the agent actually loads bundled references — Required Reading Router, hard STOP directives, gist tripwires, and one-level reference depth
+- **[spec-peer-review](./skills/mine/spec-peer-review)** — Optional cross-LLM peer review of a spec (TechSpec/design doc/RFC/PRD) via Compozy — an independent model writes one scoped findings file (blockers/nits + READY/BLOCKED/NEEDS_REWORK) for user-directed incorporation. Project-agnostic with configurable `--ide`/`--model`/`--reasoning` runtime, six tech-agnostic quality markers, and auto-discovered project rules
 - **[storybook-stories](./skills/mine/storybook-stories)** — Create, update, or refactor Storybook stories following project patterns
 - **[tailwindcss](./skills/mine/tailwindcss)** — Tailwind CSS v4 patterns, design tokens, and tailwind-variants
 - **[tanstack](./skills/mine/tanstack)** — Comprehensive TanStack ecosystem guide — Query, DB, Form, Router, and Start
