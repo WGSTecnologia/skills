@@ -2,6 +2,7 @@ __pycache__/
 *.pyc
 .DS_Store
 .env
+.tmp/
 skills/**/**/autoresearch*
 .agents/skills
 .claude/skills
