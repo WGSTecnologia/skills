@@ -1,6 +1,6 @@
 # Pedro Nauck's Skills
 
-A curated collection of **131 agent skills** for Claude Code and compatible AI coding assistants — **36 original** (⭐️), **31 hand-picked** (💎), **18 marketing & business** (📣), plus **46 community** skills. Each skill provides domain-specific knowledge, best practices, and guided workflows that enhance an agent's ability to perform specialized tasks.
+A curated collection of **128 agent skills** for Claude Code and compatible AI coding assistants — **34 original** (⭐️), **30 hand-picked** (💎), **18 marketing & business** (📣), plus **46 community** skills. Each skill provides domain-specific knowledge, best practices, and guided workflows that enhance an agent's ability to perform specialized tasks.
 
 ## Installation
 
@@ -44,8 +44,8 @@ ln -s $(pwd)/skills/mine ~/.claude/skills/mine
 
 Skills are organized into four top-level buckets:
 
-- `skills/mine/` — 36 original skills authored in this repository (⭐️)
-- `skills/curated/` — 31 hand-picked community skills (💎)
+- `skills/mine/` — 34 original skills authored in this repository (⭐️)
+- `skills/curated/` — 30 hand-picked community skills (💎)
 - `skills/marketing/` — 18 marketing, business, and writing skills (📣)
 - `skills/community/` — 46 broader community skills
 
@@ -70,10 +70,10 @@ Original skills authored in this repository.
 - **[app-renderer-systems](./skills/mine/app-renderer-systems)** — Domain feature systems organized under a `systems/` directory
 - **[architectural-analysis](./skills/mine/architectural-analysis)** — Deep architectural audit for dead code, duplication, anti-patterns, and code smells
 - **[bubbletea](./skills/mine/bubbletea)** — Build terminal UIs with Go and Bubbletea -- Elm architecture, Lipgloss styling, dual-pane layouts, and reusable components
-- **[cmux-orchestration](./skills/mine/cmux-orchestration)** — Coordinate cmux panes and surfaces to launch, prompt, monitor, and verify Claude Opus and Codex GPT-5.5 worker TUIs — supports plan-first delegation (Claude Code plan mode, Codex Plan mode); controller owns assignment, state, conflict control, and integration; workers gather evidence and report bounded patches
 - **[deslop](./skills/mine/deslop)** — Remove AI-generated code slop from the branch diff — unnecessary comments, abnormal defensive checks, `any` casts, deep nesting — before claiming a task complete or opening a PR
 - **[drizzle-safe-migrations](./skills/mine/drizzle-safe-migrations)** — Production-safe Drizzle migration workflows for schema changes
 - **[git-rebase](./skills/mine/git-rebase)** — Git rebase operations and merge conflict resolution with clean history
+- **[herdr-orchestration](./skills/mine/herdr-orchestration)** — Orchestrate Claude and Codex worker TUIs from a controller agent through herdr panes and the herdr socket CLI — supports plan-first delegation (Claude Code plan mode, Codex Plan mode) and native agent-status waits; controller owns assignment, state, conflict control, and integration; workers launch as interactive TUIs via `herdr agent start`
 - **[impl-peer-review](./skills/mine/impl-peer-review)** — Optional cross-LLM peer review of an implementation diff via Compozy — an independent model writes one scoped findings file (blockers/risks/nits + SHIP/FIX/REWORK verdict) for user-directed remediation. Project-agnostic with configurable `--ide`/`--model`/`--reasoning` runtime, auto-detected `--verify` gate, and auto-discovered project rules
 - **[insta-master](./skills/mine/insta-master)** — Plan, create, distribute, and monetize Instagram content by combining two complementary methodologies (pt-BR): **Hyeser** (tactical creator, 421k — Reels, virality, engagement, faceless monetization) and **Rafael Kiso** (mLabs founder — algorithm-as-graph, per-surface retention, internal search/SEO/AEO, consumer journey, social-media-as-a-business), distilled from 8 deep-research slices over 344 transcripts — the retention + social-signals distribution engine with per-surface thresholds (Feed 10s / Explore 11s / Reels 15s) and a diagnosis funnel, the COCA×journey content matrix (Growth / Objection / Connection / Authority), Reels craft ("it's the start, not the 3 seconds", 33% retention rule, hook→development→loop structure, lo-fi CapCut editing, A/B test reels), modern discovery (caption-as-semantic-field with the Question→Answer template, hashtag-as-SEO timeline, AEO to appear in ChatGPT/IA), profile foundations (bio-promise, subniche, @name, 0→1000 plan, converting bio link), Stories & cadence (3-5 story blocks, the frequency band over a magic number, best-time myth), creator monetization & selling (sell-without-looking-like-an-ad 80/20, 4-step DM social selling, affiliate / clips / faceless-IA / IG Shop / infoproduct), social-media-as-a-business (value/ROI pricing, 4-pillar method, media kit, UGC × influencer × brandlover), a publication checklist, plus read-only `retencao-check.py` + `post-check.py` helpers
 - **[kb-yt-channel](./skills/mine/kb-yt-channel)** — Turn a YouTube channel into a Karpathy KB topic — resolves recent or full uploads, scaffolds `yt-channels` topics, ingests transcripts via `kb ingest youtube` (captions / auto / STT), and validates plus indexes the result
@@ -94,6 +94,7 @@ Original skills authored in this repository.
 - **[tweetsmash-api](./skills/mine/tweetsmash-api)** — TweetSmash REST API for fetching bookmarks, managing labels, filtering, and pagination
 - **[typescript-advanced](./skills/mine/typescript-advanced)** — Advanced type system -- generics, conditional types, mapped types, template literals
 - **[ui-craft](./skills/mine/ui-craft)** — Anti-AI-slop guardrails for UI/UX work — usability heuristics, accessibility floors, design-system discipline, 14 named slop patterns with severity tags, tunable design dials (`VISUAL_VARIANCE`/`MOTION_INTENSITY`/`INFORMATION_DENSITY`), scene-driven decisions, Product vs Brand registers, anti-defaults blocklist, 7 named UI archetypes, plus performance / motion / dark-mode reference packs and executable contrast + token-drift scripts
+- **[writing-agents-md](./skills/mine/writing-agents-md)** — Author lean AGENTS.md/CLAUDE.md files as resident system-prompt context — the three-part rent test (delta / frequency / economy) per line, a scope ladder from global CLAUDE.md down to linked docs, form rules for rules that bind (no examples, no emphasis inflation), and Write / Trim / Gate branches
 - **[writing-skills](./skills/mine/writing-skills)** — Author, refactor, and debug agent skills: agentskills.io authoring procedure with metadata validator, the predictability doctrine (information hierarchy, pruning, leading words, descriptions, failure modes) with full glossary, and a loading-diagnosis pass for references the agent ignores (pointer-strength ladder). Merges the former skill-best-practices, writing-great-skills, and skill-load-tips
 - **[writing-tech-post](./skills/mine/writing-tech-post)** — SOTA authoring loop for engineering blog posts — 8 archetype contracts (launch / postmortem / migration / performance / tutorial / research-translation / AI-agent / security), 5-rung abstraction ladder with rung-whiplash diagnostic, 12-form evidence taxonomy with `claim → artifact → reading` cadence, 7-publisher voice matrix, four disclosure contracts (blameless / coordinated-disclosure / paper-link-first / what-we'd-do-differently), narrative arcs + closer taxonomy, and a read-only `lint-post.py` pre-publish gate
 - **[yc-apply](./skills/mine/yc-apply)** — Drive a Y Combinator batch application end-to-end through a 10-phase workspace — captures the live YC form, profiles founders and stress-tests the idea via an embedded grill loop, runs a mandatory 5-agent parallel external-research pass on the startup, drafts every field with a buzzword scanner and a provenance-labeled accepted-answer rubric, generates founder-video bullet notes (no script), enforces a script-checked 10-check pre-submit gate, then unlocks a post-invite interview-prep simulator and reapplicant delta tracking. Built from 84 YC essays + 28 interview transcripts
@@ -104,7 +105,6 @@ Original skills authored in this repository.
 Hand-picked community skills maintained in this repository.
 
 - **[agent-browser](./skills/curated/agent-browser)** — Automate browser interactions for testing, form filling, and data extraction
-- **[agent-md-refactor](./skills/curated/agent-md-refactor)** — Refactor bloated AGENTS.md/CLAUDE.md files into organized, linked documentation
 - **[architecture-diagram](./skills/curated/architecture-diagram)** — Professional dark-themed system architecture diagrams as standalone HTML/SVG files
 - **[autoresearch](./skills/curated/autoresearch)** — Autonomously optimize any skill by running evals, mutating prompts, and keeping improvements
 - **[brainstorming](./skills/curated/brainstorming)** — Explore intent, requirements, and design through collaborative dialogue

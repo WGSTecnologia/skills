@@ -1,6 +1,6 @@
 ---
 name: writing-skills
-description: Author, refactor, and debug agent skills. Use when creating a new skill from scratch, pruning or restructuring a bloated SKILL.md, tightening a skill description's triggers, or diagnosing bundled references the agent ignores. Don't use for agent instruction files like CLAUDE.md or AGENTS.md (use agent-md-refactor), general documentation, or READMEs.
+description: Author, refactor, and debug agent skills. Use when creating a new skill from scratch, pruning or restructuring a bloated SKILL.md, tightening a skill description's triggers, or diagnosing bundled references the agent ignores. Don't use for agent instruction files like CLAUDE.md or AGENTS.md (use writing-agents-md), general documentation, or READMEs.
 metadata:
   author: Pedro Nauck
   github: https://github.com/pedronauck
@@ -20,6 +20,8 @@ A skill exists to wrangle determinism out of a stochastic system. **Predictabili
 | Creating a new skill from scratch | Read `references/authoring-procedure.md` in full first — spec mechanics, directory layout, metadata validation. Then apply the doctrine below to every line of content you write. |
 | Improving an existing skill (bloat, drift, weak triggers) | Apply the doctrine below, section by section, until every rule that bears on the skill has been applied. |
 | Diagnosing a skill whose references or assets the agent ignores | Read `references/loading-diagnosis.md` in full before proposing any fix — symptoms, the pointer-strength ladder, and the fixes in order. |
+
+Every branch ends the same way: a written audit, item by item. For create and improve, read `references/checklist.md` in full and mark each item Pass or Fail against the result; for diagnose, run the repair checklist in `references/loading-diagnosis.md`. Fix every Fail and re-audit — a skill that reads well but fails the audit is not done. The doctrine below is what Part A of that audit checks; it governs every line you write, not just the ones the procedure files mention.
 
 ## Invocation
 
@@ -100,6 +102,6 @@ Use these to diagnose issues the user may be having with the skill.
 - `references/glossary.md` — the full definition of every bold term; read the entry when a term's short gloss above is not enough.
 - `references/authoring-procedure.md` — spec mechanics for the create branch (metadata rules, directory layout, script conventions, validation).
 - `references/loading-diagnosis.md` — the diagnose branch: symptoms of ignored references, the pointer-strength ladder, fixes in order.
-- `references/checklist.md` — final pre-ship audit for any created or refactored skill; walk it before declaring the work done.
+- `references/checklist.md` — the exit audit for the create and improve branches: doctrine (Part A) plus spec compliance (Part B), marked Pass/Fail item by item.
 - `scripts/validate-metadata.py` — read-only helper; validates a `name`/`description` pair against the spec. Invoke as `python3 <writing-skills-dir>/scripts/validate-metadata.py --name "[name]" --description "[description]"`.
 - `assets/SKILL.template.md` — starting skeleton for a new SKILL.md.
