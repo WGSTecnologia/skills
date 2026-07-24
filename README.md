@@ -129,7 +129,7 @@ Hand-picked community skills maintained in this repository.
 - **[tui-design](./skills/curated/tui-design)** — Universal TUI design patterns -- layouts, color schemes, keyboard navigation, dashboards, and accessibility
 - **[vercel-composition-patterns](./skills/curated/vercel-composition-patterns)** — React composition patterns for refactoring boolean prop proliferation
 - **[vercel-react-best-practices](./skills/curated/vercel-react-best-practices)** — React/Next.js performance optimization from Vercel Engineering
-- **[verification-before-completion](./skills/curated/verification-before-completion)** — Run verification commands and confirm output before claiming success
+- **[verification-before-completion](./skills/curated/verification-before-completion)** — Verify fresh evidence and publish a plan-to-evidence completion matrix before claiming success
 - **[vitest](./skills/curated/vitest)** — Fast unit testing with Vite -- Jest-compatible API, mocking, coverage, and fixtures
 - **[xstate](./skills/curated/xstate)** — XState v5 state machines, actors, and TanStack Query integration (for `@xstate/store` v4, use [xstate-store](./skills/mine/xstate-store))
 - **[zod](./skills/curated/zod)** — Zod schema validation for type safety, parsing, and error handling

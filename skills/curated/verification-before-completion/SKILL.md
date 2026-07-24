@@ -1,6 +1,6 @@
 ---
 name: verification-before-completion
-description: Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always
+description: Use when about to claim work complete, fixed, or passing, before commits or PRs - requires fresh verification evidence and a plan-to-evidence completion matrix before any success claim
 ---
 
 # Verification Before Completion
@@ -32,10 +32,35 @@ BEFORE claiming any status or expressing satisfaction:
 4. VERIFY: Does output confirm the claim?
    - If NO: State actual status with evidence
    - If YES: State claim WITH evidence
-5. ONLY THEN: Make the claim
+5. ACCOUNT: Map every planned item to implementation, evidence, status, and limit
+6. REPORT: Persist the matrix beside a written plan and include it in the final response
+7. ONLY THEN: Make the claim
 
 Skip any step = lying, not verifying
 ```
+
+## Completion Matrix
+
+Every completion response includes this matrix, using the user's language:
+
+| Item | Implementation | Evidence | Status | Limit |
+|---|---|---|---|---|
+| Exact plan item or requirement | Files, commits, or behavior delivered | Fresh command/result that proves it | `✅`, `⚠️`, `❌`, or `⏭️` | What the evidence does not prove, or `-` |
+
+Rules:
+
+1. Create one row for every plan item and global constraint; never collapse unverified items into prose.
+2. Put only one status icon in the Status column: `✅`, `⚠️`, `❌`, or `⏭️`.
+3. Use `-` under Limit when no qualification remains.
+6. Record failed verification attempts that affected confidence, followed by the successful retry when one exists.
+7. Add build artifacts, hashes, branch/HEAD, Git state, and uncommitted files below the matrix when applicable.
+
+When a written plan exists, save a durable report beside it as
+`<plan-stem>-VERIFICATION.md`. The report contains the matrix, exact commands, result counts, artifacts,
+Git state, failed attempts, and remaining limits. Link the report in the final response.
+
+When no written plan exists, the final response itself is the durable completion record and still contains
+the matrix.
 
 ## Common Failures
 
@@ -99,7 +124,7 @@ Skip any step = lying, not verifying
 **Requirements:**
 
 ```
-✅ Re-read plan → Create checklist → Verify each → Report gaps or completion
+✅ Re-read plan → Map every item → Verify each → Persist matrix → Report gaps or completion
 ❌ "Tests pass, phase complete"
 ```
 
